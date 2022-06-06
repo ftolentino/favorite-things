@@ -17,110 +17,31 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
-    <title>Programming Language Selector</title>
+    <title>Favorite Things</title>
 </head>
 <body>
   <div class="container py-5 px-4">
     <div class="jumbotron rounded d-flex flex-column align-items-center bg-secondary py-5 mx-auto">
-      <h1 class="display-1 text-light px-4 py-4 text-center">Programming Language Suggester</h1>
+      <h1 class="display-1 text-light px-4 py-4 text-center">Favorite Things</h1>
     </div>
     <div class="d-flex flex-column align-items-center py-5">
-      <p class="display-6 text-center w-50">Complete the survey to find out what programming language best suits you.</p>
+      <p class="display-6 text-center w-50">Favorite Things Webpage</p>
     </div>
     <!-- Survey Form -->
     <div class="container d-flex flex-column align-items-center">
       <form id="survey-form">
         <div class="card d-flex flex-column align-items-center my-4" style="width: 30rem;">
-          <p class="my-4 mx-2 w-50 text-center">Which of the two colors best matches how you feel right now?</p>
+          <p class="my-4 mx-2 w-50 text-center">What are some of your favorite things?</p>
           <div class="d-flex flex-column align-items-center input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text my-1">
-                <label for="Red">
-                  <input type="radio" name="color" value="red" checked aria-label="Checkbox for following text input">
-                  Red
-                </label>
+                  <input type="text" id="input1">
               </div>
               <div class="input-group-text my-1">
-                <label for="Blue">
-                  <input type="radio" name="color" value="blue" aria-label="Checkbox for following text input">
-                  Blue
-                </label>
-              </div>
-            </div>
-          </div>        
-        </div>
-        <div class="card d-flex flex-column align-items-center my-4" style="width: 30rem;">
-          <p class="my-4 mx-2 w-50 text-center">Are you a lefty or righty?</p>
-          <div class="d-flex flex-column align-items-center input-group mb-3">
-            <div class="input-group-prepend">
-              <div class="input-group-text my-1">
-                <label for="Lefty">
-                  <input type="radio" name="hand" value="lefty" checked aria-label="Checkbox for following text input">
-                  Lefty
-                </label>
+                <input type="text" id="input2">
               </div>
               <div class="input-group-text my-1">
-                <label for="Blue">
-                  <input type="radio" name="hand" value="righty" aria-label="Checkbox for following text input">
-                  Righty
-                </label>
-              </div>
-            </div>
-          </div>        
-        </div>
-        <div class="card d-flex flex-column align-items-center my-4" style="width: 30rem;">
-          <p class="my-4 mx-2 w-50 text-center">Are you a cat or dog person?</p>
-          <div class="d-flex flex-column align-items-center input-group mb-3">
-            <div class="input-group-prepend">
-              <div class="input-group-text my-1">
-                <label for="Cat">
-                  <input type="radio" name="pet" value="cat"  checked aria-label="Checkbox for following text input">
-                  Cat
-                </label>
-              </div>
-              <div class="input-group-text my-1">
-                <label for="Dog">
-                  <input type="radio" name="pet" value="dog" aria-label="Checkbox for following text input">
-                  Dog
-                </label>
-              </div>
-            </div>
-          </div>        
-        </div>
-        <div class="card d-flex flex-column align-items-center my-4" style="width: 30rem;">
-          <p class="my-4 mx-2 w-50 text-center">Which English Premier League club would you choose out of the two?</p>
-          <div class="d-flex flex-column align-items-center input-group mb-3">
-            <div class="input-group-prepend">
-              <div class="input-group-text my-1">
-                <label for="Liverpool">
-                  <input type="radio" name="club" value="liverpool" checked aria-label="Checkbox for following text input">
-                  Liverpool
-                </label>
-              </div>
-              <div class="input-group-text my-1">
-                <label for="Manchester City">
-                  <input type="radio" name="club" value="man-city" aria-label="Checkbox for following text input">
-                  Manchester City
-                </label>
-              </div>
-            </div>
-          </div>        
-        </div>
-        <div class="card d-flex flex-column align-items-center my-4" style="width: 30rem;">
-          <p class="my-4 mx-4 w-50 text-center">Are you a morning person?</p>
-          <div class="d-flex flex-column align-items-center input-group mb-3">
-            <div class="input-group-prepend">
-              <div class="input-group-text my-1">
-                <label for="Yes">
-                  <input type="radio" name="answer" value="yes" checked aria-label="Checkbox for following text input">
-                  Yes
-                </label>
-              </div>
-              <div class="input-group-text my-1">
-                <label for="No">
-                  <input type="radio" name="answer" value="no" aria-label="Checkbox for following text input">
-                  No
-                </label>
+                <input type="text" id="input3">
               </div>
             </div>
           </div>        
@@ -131,11 +52,11 @@
       </form>
     </div>
     <!-- Output adds result text to the page -->
-    <div class="p-4" id="result-container">
-      <div class="d-flex flex-column align-items-center">
-        <p class="display-6 text-center">Based on your choices, you should try out <span class="output"></span>!</p>
-      </div>
-    </div>
+    <ul class="p-4" id="result-container">
+      <li id="liInputOne"></li>
+      <li id="liInputTwo"></li>
+      <li id="liInputThree"></li>
+    </ul>
   </div>
 </body>
 </html>
